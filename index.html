@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Magic Arrow MVP</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h2>Magic Arrow Demo</h2>
+
+  <!-- ChatGPT Steps Input -->
+  <h3>Paste ChatGPT Steps Here (JSON format)</h3>
+  <textarea id="chatStepsInput" rows="6">
+[
+  {"target":"#nameInput","text":"Type your name here"},
+  {"target":"#submitBtn","text":"Click the submit button"}
+]
+  </textarea>
+  <br />
+  <button id="startGuideBtn">Start Guide</button>
+  <hr />
+
+  <!-- Demo Page Elements -->
+  <input id="nameInput" placeholder="Type your name here" />
+  <br /><br />
+  <button id="submitBtn">Submit</button>
+
+  <!-- Magic Arrow -->
+  <div id="arrow">➤</div>
+
+  <!-- Backpack / Instruction box -->
+  <div id="backpack">
+    <p id="instructionText"></p>
+    <button onclick="nextStep()">Next</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
